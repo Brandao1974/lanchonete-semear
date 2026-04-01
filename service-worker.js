@@ -5,7 +5,10 @@ const assets = [
 "./index.html",
 "./style.css",
 "./script.js",
-"./manifest.json"
+"./manifest.json",
+"./icons/favicon-96x96.png",
+"./icons/icon-192.png",
+"./icons/icon-512.png"
 ];
 
 self.addEventListener("install", e => {

@@ -1,7 +1,7 @@
 {
-  "name": "Lanchonete Semear",
+  "name": "Cafeteria Semear",
   "short_name": "Semear",
-  "description": "Cartao digital da Lanchonete Semear com cardapio, promocoes e informacoes de contato.",
+  "description": "Cartao digital da Cafeteria Semear com cardapio, promocoes e informacoes de contato.",
   "lang": "pt-BR",
   "start_url": "./",
   "scope": "./",
