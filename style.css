@@ -52,6 +52,49 @@ button {
   overflow: hidden;
 }
 
+.update-banner {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 50;
+  width: min(420px, calc(100% - 2rem));
+  padding: 1rem;
+  border-radius: 20px;
+  border: 1px solid rgba(228, 176, 77, 0.24);
+  background:
+    linear-gradient(135deg, rgba(39, 24, 18, 0.98), rgba(22, 14, 11, 0.98));
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+.update-banner p {
+  margin: 0 0 0.9rem;
+  color: #fff3e8;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.update-banner-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.update-btn {
+  min-width: auto;
+}
+
+.update-dismiss {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.update-dismiss:hover {
+  color: var(--text);
+}
+
 .topbar {
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   background: rgba(8, 5, 4, 0.92);
@@ -1042,6 +1085,17 @@ button {
   .btn,
   .store-btn {
     width: 100%;
+  }
+
+  .update-banner {
+    left: 1rem;
+    right: 1rem;
+    width: auto;
+  }
+
+  .update-banner-actions {
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .hero-actions,

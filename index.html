@@ -22,15 +22,16 @@
   >
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="style.css">
-
-  <script>
-    if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("service-worker.js");
-        }
-  </script>
-  
 </head>
 <body>
+  <div class="update-banner" id="update-banner" hidden>
+    <p>Uma nova versao do app esta disponivel.</p>
+    <div class="update-banner-actions">
+      <button type="button" class="btn btn-primary update-btn" id="update-button">Atualizar agora</button>
+      <button type="button" class="update-dismiss" id="update-dismiss" aria-label="Fechar aviso">Agora nao</button>
+    </div>
+  </div>
+
   <div class="site-shell">
     <div class="topbar">
       <div class="container topbar-wrap">

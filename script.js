@@ -6,6 +6,11 @@ const statusPill = document.querySelector("#status-pill");
 const statusText = document.querySelector("#status-text");
 const filterButtons = document.querySelectorAll(".filter-btn");
 const foodCards = document.querySelectorAll(".food-card");
+const updateBanner = document.querySelector("#update-banner");
+const updateButton = document.querySelector("#update-button");
+const updateDismiss = document.querySelector("#update-dismiss");
+let waitingWorker = null;
+let refreshing = false;
 
 if (navToggle && nav) {
   navToggle.addEventListener("click", () => {
@@ -37,6 +42,71 @@ const observer = new IntersectionObserver(
 );
 
 revealElements.forEach((element) => observer.observe(element));
+
+function showUpdateBanner(worker) {
+  waitingWorker = worker;
+
+  if (updateBanner) {
+    updateBanner.hidden = false;
+  }
+}
+
+function hideUpdateBanner() {
+  if (updateBanner) {
+    updateBanner.hidden = true;
+  }
+}
+
+if (updateButton) {
+  updateButton.addEventListener("click", () => {
+    if (waitingWorker) {
+      waitingWorker.postMessage({ type: "SKIP_WAITING" });
+    }
+  });
+}
+
+if (updateDismiss) {
+  updateDismiss.addEventListener("click", () => {
+    hideUpdateBanner();
+  });
+}
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", async () => {
+    try {
+      const registration = await navigator.serviceWorker.register("service-worker.js");
+
+      if (registration.waiting) {
+        showUpdateBanner(registration.waiting);
+      }
+
+      registration.addEventListener("updatefound", () => {
+        const newWorker = registration.installing;
+
+        if (!newWorker) {
+          return;
+        }
+
+        newWorker.addEventListener("statechange", () => {
+          if (newWorker.state === "installed" && navigator.serviceWorker.controller) {
+            showUpdateBanner(newWorker);
+          }
+        });
+      });
+
+      navigator.serviceWorker.addEventListener("controllerchange", () => {
+        if (refreshing) {
+          return;
+        }
+
+        refreshing = true;
+        window.location.reload();
+      });
+    } catch (error) {
+      console.error("Falha ao registrar o service worker:", error);
+    }
+  });
+}
 
 const businessHours = {
   0: { open: "10:00", close: "22:30" },
