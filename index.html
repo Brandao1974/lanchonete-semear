@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lanchonete Semear | Sabor que nasce e conquista</title>
+  <meta
+    name="description"
+    content="Lanchonete Semear em Osasco: lanches, salgados, bebidas e sabor de verdade em um ambiente acolhedor."
+  >
+  <meta name="theme-color" content="#120c09">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <div class="topbar">
+      <div class="container topbar-wrap">
+        <div class="status-pill" id="status-pill">
+          <span class="status-dot"></span>
+          <strong id="status-text">Verificando horario...</strong>
+        </div>
+        <p class="topbar-copy">Rua Piacatu, 317 - Jardim Munhoz Junior - Osasco - Sao Paulo</p>
+      </div>
+    </div>
+
+    <header class="header" id="inicio">
+      <div class="container nav-wrap">
+        <a href="#inicio" class="brand" aria-label="Lanchonete Semear">
+          <span class="brand-mark" aria-hidden="true">
+            <span class="burger-top"></span>
+            <span class="burger-mid"></span>
+            <span class="burger-bottom"></span>
+          </span>
+          <span class="brand-text">
+            <strong>Lanchonete</strong>
+            <span>Semear</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav">
+          <a href="#inicio">Inicio</a>
+          <a href="#cardapio">Cardapio</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
+          <a href="#app" class="nav-cta">Baixar App</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Lanchonete Semear</p>
+            <h1>Sabor que nasce e conquista</h1>
+            <p class="hero-text">
+              Lanches, salgados, sucos naturais e muito mais, preparados com carinho
+              para transformar qualquer pausa do dia em um momento especial.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#cardapio" class="btn btn-primary">Ver Cardapio</a>
+              <a href="#app" class="btn btn-secondary">Baixar App</a>
+            </div>
+
+            <ul class="hero-highlights">
+              <li>Ingredientes frescos</li>
+              <li>Atendimento acolhedor</li>
+              <li>Sabor marcante em Osasco</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="hero-card">
+              <div class="hero-badge">Destaque da casa</div>
+              <h2>Hamburguer Artesanal</h2>
+              <p>Pao dourado, queijo derretido, salada fresca e muito sabor.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-preview">
+        <div class="container stats-grid reveal">
+          <article class="stat-card">
+            <span>+20</span>
+            <p>Opcoes entre lanches, salgados e bebidas</p>
+          </article>
+          <article class="stat-card">
+            <span>100%</span>
+            <p>Foco em qualidade, sabor e atendimento acolhedor</p>
+          </article>
+          <article class="stat-card">
+            <span>Em breve</span>
+            <p>Pedidos pelo aplicativo para facilitar o seu dia</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="destaques">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Selecao Especial</p>
+            <h2>Destaques da Casa</h2>
+            <p>Os favoritos dos nossos clientes</p>
+          </div>
+
+          <div class="destaques-grid">
+            <div class="destaque-card reveal">
+              <div class="destaque-emoji">🍔</div>
+              <h3>X-Tudo</h3>
+              <p>Pao macio, carne suculenta, bacon, ovo e muito sabor</p>
+              <span>R$ 22,90</span>
+            </div>
+
+            <div class="destaque-card reveal">
+              <div class="destaque-emoji">🥟</div>
+              <h3>Coxinha</h3>
+              <p>Massa leve, recheio cremoso e crocante por fora</p>
+              <span>R$ 7,00</span>
+            </div>
+
+            <div class="destaque-card reveal">
+              <div class="destaque-emoji">🫐</div>
+              <h3>Acai na Tigela</h3>
+              <p>Refrescante, energetico e delicioso</p>
+              <span>R$ 15,00</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="avaliacoes">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Depoimentos</p>
+            <h2>O que nossos clientes dizem</h2>
+          </div>
+
+          <div class="avaliacoes-grid">
+            <div class="avaliacao-card reveal">
+              <div class="stars">★★★★★</div>
+              <p>"Melhor lanche da regiao. Atendimento rapido e muito saboroso."</p>
+              <h4>Joao Silva</h4>
+            </div>
+
+            <div class="avaliacao-card reveal">
+              <div class="stars">★★★★★</div>
+              <p>"A coxinha e incrivel e o acai e muito bom. Recomendo."</p>
+              <h4>Maria Oliveira</h4>
+            </div>
+
+            <div class="avaliacao-card reveal">
+              <div class="stars">★★★★★</div>
+              <p>"Ambiente acolhedor e precos justos. Sempre volto."</p>
+              <h4>Carlos Souza</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="funcionamento">
+        <div class="container funcionamento-grid">
+          <div class="funcionamento-copy reveal">
+            <p class="eyebrow">Atendimento</p>
+            <h2>Horario de Funcionamento</h2>
+            <p>
+              Estamos prontos para atender voce com sabor, rapidez e aquele cuidado
+              especial em cada pedido.
+            </p>
+
+            <div class="horarios-lista">
+              <div class="horario-item">
+                <span>Segunda a Sexta</span>
+                <strong>18h00 as 23h00</strong>
+              </div>
+              <div class="horario-item">
+                <span>Sabado</span>
+                <strong>18h00 as 00h00</strong>
+              </div>
+              <div class="horario-item">
+                <span>Domingo</span>
+                <strong>17h30 as 22h30</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="pedido-card reveal">
+            <div class="pedido-badge">Pedido Rapido</div>
+            <h3>Peca Agora</h3>
+            <p>
+              Fale com a Lanchonete Semear e garanta seu pedido de forma rapida e pratica.
+            </p>
+            <div class="pedido-actions">
+              <a
+                class="btn btn-primary"
+                href="https://wa.me/5511999999999?text=Ola%2C%20quero%20fazer%20um%20pedido%20na%20Lanchonete%20Semear."
+                target="_blank"
+                rel="noreferrer"
+              >
+                Peca Agora
+              </a>
+              <a href="#app" class="btn btn-secondary">Baixar App em Breve</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo-banner">
+        <div class="container promo-wrap reveal">
+          <div class="promo-copy">
+            <p class="eyebrow">Oferta Especial</p>
+            <h2>Combos que dao agua na boca</h2>
+            <p>
+              Aproveite nossas combinacoes especiais com lanche, salgado e bebida
+              para deixar seu pedido ainda mais completo.
+            </p>
+          </div>
+
+          <div class="promo-highlight">
+            <span class="promo-tag">Promo da Semana</span>
+            <strong>Combo Semear</strong>
+            <p>X-Tudo + Coxinha + Refrigerante por um preco especial.</p>
+            <span class="promo-price">R$ 29,90</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="cardapio">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Cardapio</p>
+            <h2>Escolha seu proximo favorito</h2>
+            <p>
+              Uma selecao pensada para abrir o apetite, com classicos irresistiveis
+              e bebidas para acompanhar.
+            </p>
+          </div>
+
+          <div class="menu-filters reveal">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="lanches">Lanches</button>
+            <button class="filter-btn" data-filter="salgados">Salgados</button>
+            <button class="filter-btn" data-filter="bebidas">Bebidas</button>
+          </div>
+
+          <div class="menu-items-grid">
+            <article class="food-card reveal" data-category="lanches">
+              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80" alt="X-Tudo artesanal">
+              <div class="food-card-body">
+                <span class="food-category">Lanches</span>
+                <h3>X-Tudo</h3>
+                <p>Pao macio, carne suculenta, bacon, ovo, queijo e salada fresca.</p>
+                <strong>R$ 22,90</strong>
+              </div>
+            </article>
+
+            <article class="food-card reveal" data-category="lanches">
+              <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=80" alt="X-Salada">
+              <div class="food-card-body">
+                <span class="food-category">Lanches</span>
+                <h3>X-Salada</h3>
+                <p>Hamburguer saboroso com queijo, alface, tomate e molho especial.</p>
+                <strong>R$ 18,90</strong>
+              </div>
+            </article>
+
+            <article class="food-card reveal" data-category="lanches">
+              <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=900&q=80" alt="X-Bacon">
+              <div class="food-card-body">
+                <span class="food-category">Lanches</span>
+                <h3>X-Bacon</h3>
+                <p>Hamburguer artesanal com bacon crocante e queijo derretido.</p>
+                <strong>R$ 20,90</strong>
+              </div>
+            </article>
+
+            <article class="food-card reveal" data-category="lanches">
+              <img src="https://images.unsplash.com/photo-1525059696034-4967a8e1dca2?auto=format&fit=crop&w=900&q=80" alt="X-Egg">
+              <div class="food-card-body">
+                <span class="food-category">Lanches</span>
+                <h3>X-Egg</h3>
+                <p>Um classico reforcado com ovo, queijo, carne e molho da casa.</p>
+                <strong>R$ 19,90</strong>
+              </div>
+            </article>
+
+            <article class="food-card reveal" data-category="lanches">
+              <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=900&q=80" alt="X-Burger">
+              <div class="food-card-body">
+                <span class="food-category">Lanches</span>
+                <h3>X-Burger</h3>
+                <p>Opcao simples, saborosa e perfeita para qualquer hora do dia.</p>
+                <strong>R$ 17,90</strong>
+              </div>
+            </article>
+
+            <article class="food-card reveal" data-category="salgados">
+              <img src="https://images.unsplash.com/photo-1625944525533-473f1a3d54b8?auto=format&fit=crop&w=900&q=80" alt="Coxinha">
+              <div class="food-card-body">
+                <span class="food-category">Salgados</span>
+                <h3>Coxinha</h3>
+                <p>Massa leve, recheio cremoso e casquinha dourada e crocante.</p>
+                <strong>R$ 7,00</strong>
+              </div>
+            </article>
+
+            <article class="food-card reveal" data-category="salgados">
+              <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=80" alt="Risoles">
+              <div class="food-card-body">
+                <span class="food-category">Salgados</span>
+                <h3>Risoles</h3>
+                <p>Recheio bem servido, massa delicada e fritura no ponto certo.</p>
+                <strong>R$ 7,50</strong>
+              </div>
+            </article>
+
+            <article class="food-card reveal" data-category="salgados">
+              <img src="https://images.unsplash.com/photo-1604908554027-1d0a87f2b8dc?auto=format&fit=crop&w=900&q=80" alt="Croissant">
+              <div class="food-card-body">
+                <span class="food-category">Salgados</span>
+                <h3>Croissant</h3>
+                <p>Massa dourada e recheio caprichado para um lanche especial.</p>
+                <strong>R$ 9,90</strong>
+              </div>
+            </article>
+
+            <article class="food-card reveal" data-category="salgados">
+              <img src="https://images.unsplash.com/photo-1541599188778-cdc73298e8fc?auto=format&fit=crop&w=900&q=80" alt="Bolinho de queijo">
+              <div class="food-card-body">
+                <span class="food-category">Salgados</span>
+                <h3>Bolinho de queijo</h3>
+                <p>Sequinho por fora, macio por dentro e cheio de sabor.</p>
+                <strong>R$ 8,00</strong>
+              </div>
+            </article>
+
+            <article class="food-card reveal" data-category="salgados">
+              <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=900&q=80" alt="Empada">
+              <div class="food-card-body">
+                <span class="food-category">Salgados</span>
+                <h3>Empada</h3>
+                <p>Massa amanteigada com recheio saboroso e bem temperado.</p>
+                <strong>R$ 8,50</strong>
+              </div>
+            </article>
+
+            <article class="food-card reveal" data-category="bebidas">
+              <img src="https://images.unsplash.com/photo-1600271886742-f049cd5bba3f?auto=format&fit=crop&w=900&q=80" alt="Suco de laranja natural">
+              <div class="food-card-body">
+                <span class="food-category">Bebidas</span>
+                <h3>Suco de laranja natural</h3>
+                <p>Refrescante, natural e feito para acompanhar qualquer pedido.</p>
+                <strong>R$ 10,00</strong>
+              </div>
+            </article>
+
+            <article class="food-card reveal" data-category="bebidas">
+              <img src="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?auto=format&fit=crop&w=900&q=80" alt="Acai na tigela">
+              <div class="food-card-body">
+                <span class="food-category">Bebidas</span>
+                <h3>Acai na tigela</h3>
+                <p>Gelado, energetico e irresistivel para qualquer momento.</p>
+                <strong>R$ 15,00</strong>
+              </div>
+            </article>
+
+            <article class="food-card reveal" data-category="bebidas">
+              <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=900&q=80" alt="Refrigerantes diversos">
+              <div class="food-card-body">
+                <span class="food-category">Bebidas</span>
+                <h3>Refrigerantes diversos</h3>
+                <p>Coca-Cola, Guarana, Fanta Laranja e outras opcoes geladas.</p>
+                <strong>A partir de R$ 6,00</strong>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section app-section" id="app">
+        <div class="container app-grid">
+          <div class="app-copy reveal">
+            <p class="eyebrow">Baixe Nosso App</p>
+            <h2>Peca sem sair de casa</h2>
+            <p>
+              Em breve voce podera pedir direto pelo nosso aplicativo, com mais
+              praticidade, rapidez e acesso as novidades da Lanchonete Semear.
+            </p>
+          </div>
+
+          <div class="app-actions reveal">
+            <button class="store-btn" disabled>Google Play <span>Em breve</span></button>
+            <button class="store-btn" disabled>App Store <span>Em breve</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="sobre">
+        <div class="container about-grid">
+          <div class="about-panel reveal">
+            <p class="eyebrow">Sobre</p>
+            <h2>Uma lanchonete feita para acolher</h2>
+            <p>
+              A Lanchonete Semear nasceu com o proposito de oferecer sabor,
+              qualidade e atendimento acolhedor. Trabalhamos com ingredientes
+              frescos e preparamos cada lanche com carinho.
+            </p>
+            <p>
+              Nosso compromisso e entregar uma experiencia gostosa, caprichada e
+              memoravel, seja para um lanche rapido ou para matar aquela vontade
+              de comer bem.
+            </p>
+          </div>
+
+          <div class="about-feature reveal">
+            <div class="feature-box">
+              <h3>Por que escolher a Semear?</h3>
+              <ul>
+                <li>Receitas preparadas com cuidado</li>
+                <li>Visual irresistivel e sabor marcante</li>
+                <li>Ambiente acolhedor e atendimento proximo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section location-section" id="contato">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Localizacao</p>
+            <h2>Venha nos visitar</h2>
+            <p>
+              Rua Piacatu, 317, Jardim Munhoz Junior, Osasco, Sao Paulo.
+            </p>
+          </div>
+
+          <div class="location-grid">
+            <div class="location-card reveal">
+              <h3>Lanchonete Semear</h3>
+              <p>Rua Piacatu, 317</p>
+              <p>Jardim Munhoz Junior</p>
+              <p>Osasco - Sao Paulo</p>
+              <a
+                class="btn btn-primary"
+                href="https://www.google.com/maps/search/?api=1&query=Rua+Piacat%C3%BA,+317,+Jardim+Munhoz+J%C3%BAnior,+Osasco,+S%C3%A3o+Paulo"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Como Chegar
+              </a>
+            </div>
+
+            <div class="map-frame reveal">
+              <iframe
+                title="Mapa da Lanchonete Semear"
+                src="https://www.google.com/maps?q=Rua%20Piacat%C3%BA%2C%20317%2C%20Jardim%20Munhoz%20J%C3%BAnior%2C%20Osasco%2C%20S%C3%A3o%20Paulo&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="#inicio" class="brand footer-brand">
+            <span class="brand-mark" aria-hidden="true">
+              <span class="burger-top"></span>
+              <span class="burger-mid"></span>
+              <span class="burger-bottom"></span>
+            </span>
+            <span class="brand-text">
+              <strong>Lanchonete</strong>
+              <span>Semear</span>
+            </span>
+          </a>
+          <p class="footer-copy">Sabor, carinho e qualidade em cada pedido.</p>
+        </div>
+
+        <div>
+          <h3>Endereco</h3>
+          <p>Rua Piacatu, 317</p>
+          <p>Jardim Munhoz Junior</p>
+          <p>Osasco - Sao Paulo</p>
+        </div>
+
+        <div>
+          <h3>Contato</h3>
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noreferrer">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Lanchonete Semear. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

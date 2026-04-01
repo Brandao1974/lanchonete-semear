@@ -1,0 +1,12 @@
+{
+  "name": "Lanchonete Semear",
+  "short_name": "Semear",
+  "description": "Cartao digital da Lanchonete Semear com cardapio, promocoes e informacoes de contato.",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#120c09",
+  "theme_color": "#120c09",
+  "orientation": "portrait-primary"
+}
