@@ -53,6 +53,7 @@ function toMinutes(timeString) {
   return hours * 60 + minutes;
 }
 
+
 function updateStoreStatus() {
   if (!statusPill || !statusText) {
     return;

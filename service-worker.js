@@ -1,4 +1,5 @@
-const cacheName = "semear-v1";
+const CACHE_VERSION = new Date().getTime();
+const cacheName = `semear-${CACHE_VERSION}`;
 
 const assets = [
 "./",
@@ -15,6 +16,18 @@ self.addEventListener("install", e => {
 e.waitUntil(
 caches.open(cacheName)
 .then(cache => cache.addAll(assets))
+);
+});
+
+self.addEventListener("activate", event => {
+event.waitUntil(
+caches.keys().then(keys => {
+return Promise.all(
+keys
+.filter(key => key !== cacheName)
+.map(key => caches.delete(key))
+);
+})
 );
 });
 
